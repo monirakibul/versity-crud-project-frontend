@@ -2,9 +2,11 @@ const API_BASE = 'http://localhost:5000/api';
 
 function register() {
     const name = document.getElementById('authName').value;
+
     const username = document.getElementById('authUsername').value;
     const email = document.getElementById('authEmail').value;
     const password = document.getElementById('authPassword').value;
+    
     fetch(`${API_BASE}/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -16,7 +18,7 @@ function register() {
         } else {
             alert(data.message || 'Registration failed');
         }
-    });
+    }); 
 }
 
 function login() {

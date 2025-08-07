@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Registration & Student CRUD</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="form-title">Teacher Registration</h2>
+
+        <div class="error" id="error"></div>
+
+        <form onsubmit="event.preventDefault(); register();">
+            <input type="text" id="authName" placeholder="Name" required />
+            <input type="text" id="authUsername" placeholder="Username" required />
+            <input type="text" id="authEmail" placeholder="Email" required />
+            <input type="password" id="authPassword" placeholder="Password" required />
+            <button type="submit" id="submit-btn">Register</button>
+        </form>
+
+        <div class="toggle">
+            <a href="login.html">
+                <span id="toggle-text">Already have an account? Login</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
